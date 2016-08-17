@@ -38,3 +38,13 @@ We rate our locations on:
 [Drew Ferris](https://github.com/drewferris)
 
 [Rashid Baset](https://github.com/rashidbaset)
+
+TO-DO:
+- SMACCS the shit out of it
+- Handlebars the profiles
+- Pseudo-icons for social media
+- Single page conversion
+- jQuery all the things
+- Refactor their constructor in app.js
+- Map those arrays
+- 
