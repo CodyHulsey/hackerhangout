@@ -1,0 +1,63 @@
+.cta:hover{
+  box-shadow: 0 1px 1px #333;
+  transform: scale(1.1);
+}
+
+.click-to-interact:hover{
+  cursor: default;
+}
+
+.kill-scroll {
+  pointer-events: none;
+}
+
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+
+.rating-star,
+.rating:hover .rating-star {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+
+.chart-form input[type='radio']:checked:before {
+    background:#FFF;
+    box-shadow:-1px -1px 7px 3px #FF7A7A inset;
+}
+
+.chart-form button:hover, .add-review button:hover{
+  box-shadow: 0 1px 1px #333;
+  transform: scale(1.1);
+}
+
+nav a:hover {
+  color: #FF7A7A;
+}
+
+.claire-again:hover {
+  transform: rotateY();
+  background-image: url('../img/clairegiphy.gif');
+}
+
+.chris-again:hover {
+  transform: rotateY();
+  background-image: url('../img/chrisgiph.gif');
+}
+
+.rashid-again:hover {
+  transform: rotateY();
+  background-image: url('../img/rashidgiphy.gif');
+}
+
+.drew-again:hover {
+  transform: rotateY();
+  background-image: url('../img/giphy.gif');
+}
