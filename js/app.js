@@ -75,26 +75,20 @@ console.log('hackerSpaceArray ', hackerSpaceArray);
 var dropdown1 = document.getElementById('hangouts-dropdown-1');
 var dropdown2 = document.getElementById('hangouts-dropdown-2');
 
-function addToDropDown(){
-  var addedOption ;
+function addToDropDown(dropdown){
   for (var i = 0; i < hackerSpaceArray.length; i++){
-    addedOption = document.createElement('option');
+    var addedOption = document.createElement('option');
     addedOption.setAttribute('value', hackerSpaceArray[i].name);
     addedOption.textContent = hackerSpaceArray[i].name;
-    dropdown1.appendChild(addedOption);
-  }
-  for (var i = 0; i < hackerSpaceArray.length; i++){
-    addedOption = document.createElement('option');
-    addedOption.setAttribute('value', hackerSpaceArray[i].name);
-    addedOption.textContent = hackerSpaceArray[i].name;
-    dropdown2.appendChild(addedOption);
+    dropdown.appendChild(addedOption);
   }
 };
 
 getInputFromLocalStorage();
 
 if (indexID) {
-  addToDropDown();
+  addToDropDown(dropdown1);
+  addToDropDown(dropdown2);
 }
 
 function clearBox(elementID) {
@@ -217,7 +211,7 @@ function RadarChartData(labelName, color, colorFill){
 RadarChartData.prototype.setData = function(inputObject){
   for (var i = 0; i < reviewCriteriaArray.length; i++) {
     this.data.push(inputObject[reviewCriteriaArray[i]]);
-  }
+  };
 };
 
 var submitComparisonForm = document.getElementById('chart-form');

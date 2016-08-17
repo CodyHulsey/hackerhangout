@@ -1,5 +1,4 @@
-
-//Come back to this after figuring out radio and other input... this content is straight from the chartjs documentation
+// Come back to this after figuring out radio and other input... this content is straight from the chartjs documentation
 
 var data = {
     labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
