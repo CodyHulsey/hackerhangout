@@ -10,6 +10,16 @@
     <script src="js/chart.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
   </head>
+
+  <script id="project-template" type="text/x-handlebars-template">
+    <div class={{name}}>
+      <h2 class="team-name">Chris</h2>
+      <div class="{{nameAgain}} team-pics"></div>
+        {{{body}}}
+      <a href="{{link}}"><img src='img/mark-github.png' class='github-image'></a>
+    </div>
+  </script>
+
   <body id="indexID">
 
     <header>
@@ -112,42 +122,15 @@
         </section>
 
       <section id="about" class="tab-content">
-
         <section class="bio-content">
-         <!-- TODO: Handlebar templates here -->
         <h1 class="team-name">About the Hackers</h1>
-        <section id='team-bios' class='team-bios'>
-          <div class='Chris'>
-            <h2 class="team-name">Chris</h2>
-            <div class="chris-again team-pics"></div>
-            <p> Chris was born in Southern California, spent 10 years in the Arizona desert, and moved to Seattle for the weather and the coding. He likes his Scotches with just a hint of smoke, and his cookies with a whole lot of milk. </p>
-            <a href="https://github.com/ckperez"><img src='img/mark-github.png' class='github-image'></a>
-          </div>
-          <div class='Claire'>
-            <h2 class="team-name">Claire</h2>
-            <div class="claire-again team-pics"></div>
-            <p> Claire is a born and bred Australian who made the wild decision to quit her job and move to Seattle, USA and learn how to code. She loves cats, travelling, the outdoors and taking photos. </p>
-            <a href='https://github.com/clair3st'><img src='img/mark-github.png'class="github-image"></a>
-          </div>
-          <div class='Drew'>
-            <h2 class="team-name">Drew</h2>
-            <div class="drew-again team-pics"></div>
-            <p> Drew was born and raised in Seattle and has lived here his whole life. He likes to spend his time playing and watching soccer, skiing and enjoys a good game of cards as well anything to do with Russian culture and literature. He can run a mile in five minutes. </p>
-            <a href='https://github.com/drewferris'><img src='img/mark-github.png' class='github-image'></a>
-          </div>
-          <div class='Rashid'>
-            <h2 class="team-name">Rashid</h2>
-            <div class="rashid-again team-pics"></div>
-            <p> Rashid was born in Chicago and raised in the suburbs of Detroit. While on a trip in Bangladesh he decided take a long sought after quest to become a full fledged software engineer and move to Seattle. He enjoys jogging, biking and twitter in his spare time. </p>
-            <a href="https://github.com/rashidbaset"><img src='img/mark-github.png' class='github-image'></a>
-          </div>
-        </section>
-      </section>
-      <section class="team-mission">
-        <h1>About the App</h1>
-        <p>Hacker Hangout was developed to solve the first-world problem of having to decide just where you want to plop down and write some code when don't want to go to the office, but you do want to leave your house. Using our proprietary algorithm, hackers and other remote workers can pick the best place based on their preferences <em>that day</em> to stare at their laptops and enjoy some coffee or an adult beverage. Please enjoy our app. We hope it helps you <a href="index.html#review-page">Find Your Hacky Place.</a><p>
-      </section>
+        <section id='team-bios' class='team-bios'></section>
 
+        </section>
+        <section class="team-mission">
+          <h1>About the App</h1>
+          <p>Hacker Hangout was developed to solve the first-world problem of having to decide just where you want to plop down and write some code when don't want to go to the office, but you do want to leave your house. Using our proprietary algorithm, hackers and other remote workers can pick the best place based on their preferences <em>that day</em> to stare at their laptops and enjoy some coffee or an adult beverage. Please enjoy our app. We hope it helps you <a href="index.html#review-page">Find Your Hacky Place.</a><p>
+        </section>
       </section>
 
       <section id="input" class="tab-content">
@@ -284,6 +267,8 @@
       </div>
      </footer>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/app.js"></script>
     <script src="js/input.js"></script>
   </body>
