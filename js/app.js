@@ -238,7 +238,7 @@ function getInputFromLocalStorage(){
 }
 
 function showContent() {
-  $('.nav-options').on('click', function() {
+  $('.nav-options li').on('click', function() {
     var $selected = $(this).data('tab');
     $('.tab-content').hide();
     $('#' + $selected).show();
@@ -249,3 +249,5 @@ function showContent() {
     $('#home').show();
   });
 }
+
+showContent();

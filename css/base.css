@@ -9,10 +9,12 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   width: 100%;
+  margin-top: 5em;
 }
 
 header{
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 100;
 }
 
@@ -43,4 +45,17 @@ video {
   margin: auto;
   object-fit: cover;
 
+}
+
+.inputID h1 {
+  padding: 70px 5px 25px 5px;
+  width: 80%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: #fff;
+  background-color: #FF7a7a;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 7px;
 }
