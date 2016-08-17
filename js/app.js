@@ -236,3 +236,16 @@ function getInputFromLocalStorage(){
     hackerSpaceArray = updatedHackerSpaceArray;
   }
 }
+
+function showContent() {
+  $('.nav-options').on('click', function() {
+    var $selected = $(this).data('tab');
+    $('.tab-content').hide();
+    $('#' + $selected).show();
+  });
+
+  $(function() {
+    $('.tab-content').hide();
+    $('#home').show();
+  });
+}
