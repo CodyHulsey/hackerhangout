@@ -236,3 +236,31 @@ function getInputFromLocalStorage(){
     hackerSpaceArray = updatedHackerSpaceArray;
   }
 }
+
+function showContent() {
+  $('.nav-options li').on('click', function() {
+    var $selected = $(this).data('tab');
+    $('.tab-content').hide();
+    $('#' + $selected).show();
+  });
+
+  $(function() {
+    $('.tab-content').hide();
+    $('#home').show();
+  });
+}
+
+function toHtml(data) {
+  // get template from the DOM
+  var source = $('#project-template').html();
+  // create template function
+  var template = Handlebars.compile(source);
+  // pass in data to the template function
+  return template(data);
+};
+
+showContent();
+
+for (var person in data) {
+  $('#team-bios').append(toHtml(data[person]));
+};

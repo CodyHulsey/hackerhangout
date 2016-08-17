@@ -33,19 +33,6 @@ nav a {
   height: 24px;
 }
 
-.inputID h1 {
-  padding: 70px 5px 25px 5px;
-  width: 80%;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  color: #fff;
-  background-color: #FF7a7a;
-  font-family: 'Ubuntu', sans-serif;
-  border-radius: 7px;
-}
-
 section:nth-of-type(2){
   z-index: 0;
   position: relative;
@@ -182,4 +169,17 @@ section:nth-of-type(2){
   color: #FF7A7A;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
+}
+
+#input h1 {
+  padding: 70px 5px 25px 5px;
+  width: 80%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: #fff;
+  background-color: #FF7a7a;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 7px;
 }
